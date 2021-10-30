@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="jquery/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="jquery/jquery.min.js">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ColorFlipper</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <div class="nav-right">
+        <li class="simple1"><a href="index.html"> Simple</a></li>
+        <li class="simple"><a href="hex.html"> Hex</a></li>
+      </div>
+
+    </ul>
+  </div>
+</nav>
+<main>
+   <div class="form-group">
+     <h2>
+      Background Color :
+      <span class="color">
+        <br>
+        #f1f5f8
+      </span>
+     </h2>
+   </div>
+   <div class="">
+    <button  id="btn" class="btn">Click Me</button>
+   </div>
+
+</main>
+    </div>
+<style>
+  @keyframes animation {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+body{
+  background-color: #bcbcbc;
+}
+.color{
+  color: #c48484;
+}
+.navbar-brand{
+  color:#9AA7AD;
+}
+  button{
+    margin-left:400px;
+    width:250px;
+    background-color: black;
+    color:bisque;
+  }
+  button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 1;
+}
+  h2{
+    background-color: black;
+    height: 150px;
+    color:white;
+    padding-top: 50px;
+    padding-left:80px;
+    width:500px;
+    border-radius: 10px;
+    animation-name:example;
+    animation-duration: 4s;
+  }
+  .form-group{
+    margin-top: 100px;
+    margin-left:300px;
+  }
+  .simple1{
+    margin-right: 20px;
+  }
+nav{
+  background-color: black;
+}
+.nav-right{
+  display: flex;
+  margin-right: 200px;
+
+}
+</style>
+<script src="app.js"> </script>
+  </body>
+</html>
